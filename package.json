@@ -1,7 +1,7 @@
 {
   "name": "grunt-environment-vars",
   "description": "Automation of reading environment from yml file and write in html files like window var",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/krlos2011/grunt-environment-vars",
   "author": "Carlos Fernández <krletes@gmail.com>",
   "repository": {

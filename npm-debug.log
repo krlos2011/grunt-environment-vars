@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/4.1.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   './' ]
+2 info using npm@3.3.9
+3 info using node@v4.1.1
+4 verbose publish [ './' ]
+5 silly cache add args [ './', null ]
+6 verbose cache add spec ./
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: './',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: './',
+7 silly cache add   spec: '/Users/Carlos/Desarrollo/grunt-environment-vars',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/Carlos/.npm/grunt-environment-vars/0.0.1/package.tgz not in flight; packing
+9 info lifecycle grunt-environment-vars@0.0.1~prepublish: grunt-environment-vars@0.0.1
+10 silly lifecycle grunt-environment-vars@0.0.1~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/Carlos/.npm/grunt-environment-vars/0.0.1/package.tgz',
+11 verbose tar pack   '/Users/Carlos/Desarrollo/grunt-environment-vars' ]
+12 verbose tarball /Users/Carlos/.npm/grunt-environment-vars/0.0.1/package.tgz
+13 verbose folder /Users/Carlos/Desarrollo/grunt-environment-vars
+14 verbose addLocalTarball adding from inside cache /Users/Carlos/.npm/grunt-environment-vars/0.0.1/package.tgz
+15 silly cache afterAdd grunt-environment-vars@0.0.1
+16 verbose afterAdd /Users/Carlos/.npm/grunt-environment-vars/0.0.1/package/package.json not in flight; writing
+17 verbose afterAdd /Users/Carlos/.npm/grunt-environment-vars/0.0.1/package/package.json written
+18 silly publish { name: 'grunt-environment-vars',
+18 silly publish   description: 'Automation of reading environment from yml file and write in html files like window var',
+18 silly publish   version: '0.0.1',
+18 silly publish   homepage: 'https://github.com/krlos2011/grunt-environment-vars',
+18 silly publish   author: { name: 'Carlos Fernández', email: 'krletes@gmail.com' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+ssh://git@github.com/krlos2011/grunt-environment-vars.git' },
+18 silly publish   bugs: { url: 'https://github.com/krlos2011/grunt-environment-vars/issues' },
+18 silly publish   licenses:
+18 silly publish    [ { type: 'MIT',
+18 silly publish        url: 'https://github.com/krlos2011/grunt-environment-vars/blob/master/LICENSE-MIT' } ],
+18 silly publish   engines: { node: '>= 0.10.0' },
+18 silly publish   scripts: {},
+18 silly publish   devDependencies: {},
+18 silly publish   peerDependencies: { grunt: '~0.4.5' },
+18 silly publish   keywords: [ 'gruntplugin' ],
+18 silly publish   dependencies: { 'jengine-utils': '0.0.26' },
+18 silly publish   readme: '# grunt-environment-vars\n\n> Automation of reading environment from yml file and write in html files like window var\n\n## Getting Started\nThis plugin requires Grunt `~0.4.5`\n\nIf you haven\'t used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you\'re familiar with that process, you may install this plugin with this command:\n\n```shell\nnpm install grunt-environment-vars --save-dev\n```\n\nOnce the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\n\n```js\ngrunt.loadNpmTasks(\'grunt-environment-vars\');\n```\n\n## The "environment" task\n\n### Overview\nIn your project\'s Gruntfile, add a section named `environment` to the data object passed into `grunt.initConfig()`.\n\n```js\ngrunt.initConfig({\n\n  dir: {\n    dev: \'.tmp\',\n    dist: \'dist\'\n  },\n\n  environment: {\n    options: {\n      file: \'environment.yml\'\n    },\n    dev: {\n      dest: [\'<%= dir.dev %>/index.html\']\n    },\n    dist: {\n      dest: [\'<%= dir.dist %>/index.html\']\n    }\n  }\n});\n```\n\n## Contributing\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).\n\n## Release History\n_(Nothing yet)_',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '3dc20e72f26696d57743582d41cd13b45ea97027',
+18 silly publish   _id: 'grunt-environment-vars@0.0.1',
+18 silly publish   _shasum: 'dfa9cd7ba7560f4a333339250ea41247664e82b5',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name grunt-environment-vars
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/grunt-environment-vars
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/Carlos/.npm/grunt-environment-vars/0.0.1/package.tgz
+26 verbose request uri https://registry.npmjs.org/grunt-environment-vars
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 12:10:56
+29 verbose request using bearer token for auth
+30 verbose request id b8de48edaece6e5c
+31 http request PUT https://registry.npmjs.org/grunt-environment-vars
+32 http 403 https://registry.npmjs.org/grunt-environment-vars
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=60',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Fri, 20 Nov 2015 11:10:57 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-lcy1133-LCY',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1448017856.452444,VS0,VE1110' }
+34 verbose request invalidating /Users/Carlos/.npm/registry.npmjs.org/grunt-environment-vars on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 0.0.1." : grunt-environment-vars
+36 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid grunt-environment-vars
+39 verbose cwd /Users/Carlos/Desarrollo/grunt-environment-vars
+40 error Darwin 15.0.0
+41 error argv "/usr/local/Cellar/node/4.1.1/bin/node" "/usr/local/bin/npm" "publish" "./"
+42 error node v4.1.1
+43 error npm  v3.3.9
+44 error code E403
+45 error "You cannot publish over the previously published version 0.0.1." : grunt-environment-vars
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
